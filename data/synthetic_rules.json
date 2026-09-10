@@ -1,0 +1,6 @@
+[
+  {"provider":"aws","account":"prod-a","resource":"payments-db-sg","direction":"ingress","protocol":"tcp","port_start":5432,"port_end":5432,"source":"0.0.0.0/0","destination":"10.20.4.0/24","internet_exposed":true,"owner":"Platform Security","criticality":"critical"},
+  {"provider":"azure","account":"corp-sub","resource":"jumpbox-nsg","direction":"ingress","protocol":"tcp","port_start":3389,"port_end":3389,"source":"0.0.0.0/0","destination":"10.30.8.10/32","internet_exposed":true,"owner":"","criticality":"high"},
+  {"provider":"gcp","account":"analytics-prj","resource":"worker-fw","direction":"egress","protocol":"all","port_start":0,"port_end":65535,"source":"10.40.0.0/16","destination":"0.0.0.0/0","internet_exposed":false,"owner":"Data Platform","criticality":"medium"},
+  {"provider":"aws","account":"shared","resource":"internal-api-sg","direction":"ingress","protocol":"tcp","port_start":443,"port_end":443,"source":"10.0.0.0/8","destination":"10.50.1.0/24","internet_exposed":false,"owner":"API Team","criticality":"high"}
+]
